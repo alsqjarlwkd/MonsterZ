@@ -1,3 +1,6 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 .Login {
   text-align: center;
   position: absolute;
@@ -5,6 +8,9 @@
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+#Login_p {
+  letter-spacing: 1px;
 }
 .Login_backGround {
   width: 500px;
@@ -15,7 +21,7 @@
 .Login_input {
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -36,13 +42,22 @@
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid black;
+  color: white;
 }
-.JoinUs {
+.JoinUsBtn {
   width: 500px;
   height: 50px;
-  background-color: gray;
   display: table-cell;
+  background-color: gray;
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid black;
+  color: white;
+}
+.SearchSection {
+  display: flex;
+  justify-content: center;
+}
+.SearchSection p {
+  cursor: pointer;
 }

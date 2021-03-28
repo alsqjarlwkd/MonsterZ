@@ -9,6 +9,5 @@ function ClickJoinUs(){
 function init(){
     LoginBtn.addEventListener("click",ClickLogin);
     JoinUsBtn.addEventListener("click",ClickJoinUs);
-
 }
 init();
