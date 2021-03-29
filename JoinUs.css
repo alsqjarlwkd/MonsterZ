@@ -1,5 +1,8 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #dddddd;
+  animation-name: fadein;
+  animation-duration: 2s;
 }
 .MustTypingId {
   display: none;
@@ -25,4 +28,12 @@ body {
   width: 500px;
   height: 50px;
   cursor: pointer;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
