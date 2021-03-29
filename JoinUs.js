@@ -61,7 +61,6 @@ function JoinUs(){
         alert('공백이 있으면 안됌');
     }
     else{
-        alert('가입완료');
         Form.submit();
     }
 }
