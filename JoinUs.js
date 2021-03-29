@@ -1,15 +1,17 @@
-const InputId = document.querySelector(`#inputId`);
-const MustBeTyping = document.getElementById("MustTypingId");
+const inputID = document.querySelectorAll(`.inputId`);
+const MustBeTyping = document.querySelectorAll(".MustTypingId");
+let inputValue = document.querySelectorAll(".inputId").value;
 
-function Checkinput(){
-    if(InputId.value == null)
-    {
-        MustBeTyping.style.display ===`block`;
-        console.log("클릭");
-    }
+
+function Checkinput(e){
+
+
 }
-
 function init(){
-    InputId.addEventListener("click",Checkinput)
+    for(let i = 0;i<inputID.length;i++)
+{
+    inputID[i].addEventListener("click",Checkinput);
 }
+}
+
 init();
