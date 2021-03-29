@@ -11,26 +11,40 @@
     <div class="JoinUs">
         <div id="JoinUs_p"><p>MonsterZ 회원가입</p></div>
         <div class="inputSection">
-            <form name="JoinUsForm">
+            <form class="JoinUsForm" action="mem_regist.asp" method="post">
                 <label>
                     <p>아이디</p>
-                    <input  class="inputId" type="text" placeholder="아이디" name="ID" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input  id="inputId" type="text" placeholder="아이디" name="ID" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>비밀번호</p>
-                    <input class="inputId" type="text" placeholder="비밀번호" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input id="inputpassword" type="text" placeholder="비밀번호" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>비밀번호 재확인</p>
-                    <input class="inputId" type="text" placeholder="비밀번호 재확인" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input id="inputOkpassword" type="text" placeholder="비밀번호 재확인" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>이름</p>
-                    <input class="inputId" type="text" placeholder="이름" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input id="inputname" type="text" placeholder="이름" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>생년월일</p>
                     <input type="text" placeholder="년" style="width: 150px; height: 50px; margin-bottom: 10px;">
+                    <select name="Years">
+                        <option value="년">1</option>
+                        <option value="년">2</option>
+                        <option value="년">3</option>
+                        <option value="년">4</option>
+                        <option value="년">5</option>
+                        <option value="년">6</option>
+                        <option value="년">7</option>
+                        <option value="년">8</option>
+                        <option value="년">9</option>
+                        <option value="년">10</option>
+                        <option value="년">11</option>
+                        <option value="년">12</option>
+                    </select>
                     <input type="text" placeholder="월" style="width: 150px; height: 50px; margin-bottom: 10px;">
                     <input type="text" placeholder="일" style="width: 150px; height: 50px; margin-bottom: 10px;">
                     <p>휴대전화</p>
-                    <input class="inputId" type="text" placeholder="휴대전화" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input id="inputPhone" type="text" placeholder="휴대전화" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                 </label>
             </form>

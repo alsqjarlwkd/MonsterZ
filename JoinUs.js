@@ -1,9 +1,16 @@
-const InputId = document.getElementsByClassName(`inputId`);
+const InputId = document.getElementById(`inputId`);
+const inputpassword = document.getElementById(`inputpassword`);
+const inputOkpassword = document.getElementById(`inputOkpassword`);
+const inputname = document.getElementById(`inputname`);
+const inputPhone = document.getElementById(`inputPhone`);
+
+
+
 const MustBeTyping = document.getElementsByClassName(`MustTypingId`);
 const JoinUsBtn = document.querySelector(`.JoinUs_btn`);
 
 function Checkinput(){
-    if(InputId[0].value === "")
+    if(InputId.value === "")
     {
         MustBeTyping[0].style.display=`block`;
     }
@@ -13,7 +20,7 @@ function Checkinput(){
 }
 
 function Checkinput2(){
-    if(InputId[1].value === "")
+    if(inputpassword.value === "")
     {
         MustBeTyping[1].style.display=`block`;
     }
@@ -23,7 +30,7 @@ function Checkinput2(){
 }
 
 function Checkinput3(){
-    if(InputId[2].value === "")
+    if(inputOkpassword.value === "")
     {
         MustBeTyping[2].style.display=`block`;
     }
@@ -32,7 +39,7 @@ function Checkinput3(){
     }
 }
 function Checkinput4(){
-    if(InputId[3].value === "")
+    if(inputname.value === "")
     {
         MustBeTyping[3].style.display=`block`;
     }
@@ -41,7 +48,7 @@ function Checkinput4(){
     }
 }
 function Checkinput5(){
-    if(InputId[4].value === "")
+    if(inputPhone.value === "")
     {
         MustBeTyping[4].style.display=`block`;
     }
@@ -50,21 +57,23 @@ function Checkinput5(){
     }
 }
 function JoinUs(){
-    if(InputId[0].value === "" || InputId[1].value === "" ||InputId[2].value === "" || InputId[3].value === "" || InputId[4].value === "")
+    const Form = document.querySelector(`.JoinUsForm`);
+    if(InputId.value === "" || inputpassword.value === "" ||inputOkpassword.value === "" || inputname.value === "" || inputPhone.value === "")
     {
         alert('공백이 있으면 안됌');
     }
     else{
         alert('가입완료');
+        Form.submit();
     }
 }
 
 function init(){
-    InputId[0].addEventListener("click",Checkinput);
-    InputId[1].addEventListener("click",Checkinput2);
-    InputId[2].addEventListener("click",Checkinput3);
-    InputId[3].addEventListener("click",Checkinput4);
-    InputId[4].addEventListener("click",Checkinput5);
+    InputId.addEventListener("click",Checkinput);
+    inputpassword.addEventListener("click",Checkinput2);
+    inputOkpassword.addEventListener("click",Checkinput3);
+    inputname.addEventListener("click",Checkinput4);
+    inputPhone.addEventListener("click",Checkinput5);
     JoinUsBtn.addEventListener("click",JoinUs);
 }
 init();
