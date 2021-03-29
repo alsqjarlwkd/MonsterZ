@@ -1,5 +1,6 @@
 const InputId = document.getElementsByClassName(`inputId`);
 const MustBeTyping = document.getElementsByClassName(`MustTypingId`);
+const JoinUsBtn = document.querySelector(`.JoinUs_btn`);
 
 function Checkinput(){
     if(InputId[0].value === "")
@@ -48,6 +49,15 @@ function Checkinput5(){
         MustBeTyping[4].style.display=`none`;
     }
 }
+function JoinUs(){
+    if(InputId[0].value === "" || InputId[1].value === "" ||InputId[2].value === "" || InputId[3].value === "" || InputId[4].value === "")
+    {
+        alert('공백이 있으면 안됌');
+    }
+    else{
+        alert('가입완료');
+    }
+}
 
 function init(){
     InputId[0].addEventListener("click",Checkinput);
@@ -55,5 +65,6 @@ function init(){
     InputId[2].addEventListener("click",Checkinput3);
     InputId[3].addEventListener("click",Checkinput4);
     InputId[4].addEventListener("click",Checkinput5);
+    JoinUsBtn.addEventListener("click",JoinUs);
 }
 init();
