@@ -8,9 +8,9 @@
     userid = request.form("ID")
     pwd = request.form("pwd")
     phone = request.form("Phone")
-    'birYear = request.form("inputYear")
-    'birMonth = request.form("inputMonth")
-    'birDay = request.form("inputDay")
+    birYear = request.form("Year")
+    birMonth = request.form("Month")
+    birDay = request.form("Day")
 
     'SQL문
     sql = "select * from member where userid = '"&userid&"'"
@@ -23,9 +23,9 @@
         sql = sql &userid&"', '"
         sql = sql &pwd&"', '"
         sql = sql &username&"', '"
-        'sql = sql &birYear&"', '"
-        'sql = sql &birMonth&"', '"
-        'sql = sql &birDay&"', '"
+        sql = sql &birYear&"', '"
+        sql = sql &birMonth&"', '"
+        sql = sql &birDay&"', '"
         sql = sql &phone&"', default)"
 
         dbconn.execute(sql)
