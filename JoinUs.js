@@ -4,8 +4,6 @@ const inputOkpassword = document.getElementById(`inputOkpassword`);
 const inputname = document.getElementById(`inputname`);
 const inputPhone = document.getElementById(`inputPhone`);
 
-
-
 const MustBeTyping = document.getElementsByClassName(`MustTypingId`);
 const JoinUsBtn = document.querySelector(`.JoinUs_btn`);
 
@@ -67,7 +65,17 @@ function JoinUs(){
         Form.submit();
     }
 }
-
+function ChangeMonth(){
+    const inputMonth = document.getElementById(`inputMonth`);
+    const SelectBox = document.getElementById(`Months`);
+    let SelectBoxIndex = document.getElementById(`Months`).options.selectedIndex;
+        console.log("tb value : " + SelectBox.options[SelectBoxIndex].value);
+        inputMonth.value = SelectBoxIndex;
+        if(SelectBoxIndex === 0)
+        {
+            inputMonth.value = `===월 선택===`;
+        }
+}
 function init(){
     InputId.addEventListener("click",Checkinput);
     inputpassword.addEventListener("click",Checkinput2);
