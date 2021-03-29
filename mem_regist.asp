@@ -4,10 +4,10 @@
 <!--mem_regist.asp-->
 
 <% '데이터 받아오기
-    username = request.form("inputname")
-    userid = request.form("InputId")
-    pwd = request.form("inputpassword")
-    phone = request.form("inputPhone")
+    username = request.form("username")
+    userid = request.form("ID")
+    pwd = request.form("pwd")
+    phone = request.form("Phone")
     'birYear = request.form("inputYear")
     'birMonth = request.form("inputMonth")
     'birDay = request.form("inputDay")
