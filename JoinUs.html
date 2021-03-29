@@ -17,32 +17,33 @@
                     <input  id="inputId" type="text" placeholder="아이디" name="ID" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>비밀번호</p>
-                    <input id="inputpassword" type="text" placeholder="비밀번호" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input id="inputpassword" type="password" placeholder="비밀번호" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>비밀번호 재확인</p>
-                    <input id="inputOkpassword" type="text" placeholder="비밀번호 재확인" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input id="inputOkpassword" type="password" placeholder="비밀번호 재확인" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>이름</p>
                     <input id="inputname" type="text" placeholder="이름" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>생년월일</p>
-                    <input type="text" placeholder="년" style="width: 150px; height: 50px; margin-bottom: 10px;">
-                    <select name="Years">
-                        <option value="년">1</option>
-                        <option value="년">2</option>
-                        <option value="년">3</option>
-                        <option value="년">4</option>
-                        <option value="년">5</option>
-                        <option value="년">6</option>
-                        <option value="년">7</option>
-                        <option value="년">8</option>
-                        <option value="년">9</option>
-                        <option value="년">10</option>
-                        <option value="년">11</option>
-                        <option value="년">12</option>
+                    <input type="text" placeholder="년" maxlength='4' style="width: 150px; height: 50px; margin-bottom: 10px;" id="inputYear">
+                    <input type="text" placeholder="월" maxlength='2' style="width: 150px; height: 50px; margin-bottom: 10px;" id="inputMonth">
+                    <select id="Months" onchange="ChangeMonth()">
+                        <option value="none">=== 월선택 ===</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
                     </select>
-                    <input type="text" placeholder="월" style="width: 150px; height: 50px; margin-bottom: 10px;">
-                    <input type="text" placeholder="일" style="width: 150px; height: 50px; margin-bottom: 10px;">
+                    <input type="text" placeholder="일" maxlength='2' style="width: 150px; height: 50px; margin-bottom: 10px;" id="inputday">
                     <p>휴대전화</p>
                     <input id="inputPhone" type="text" placeholder="휴대전화" style="width: 300px; height: 50px; margin-bottom: 10px;">
                     <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
