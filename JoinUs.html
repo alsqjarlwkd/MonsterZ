@@ -11,23 +11,27 @@
     <div class="JoinUs">
         <div id="JoinUs_p"><p>MonsterZ 회원가입</p></div>
         <div class="inputSection">
-            <form>
+            <form name="JoinUsForm">
                 <label>
                     <p>아이디</p>
-                    <input type="text" placeholder="아이디" style="width: 300px; height: 50px; margin-bottom: 10px;" id="inputId">
-                    <p style="margin-top: 0px; color: red; display: none;" id="MustTypingId">필수 입력란 입니다!!</p>
+                    <input  class="inputId" type="text" placeholder="아이디" name="ID" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>비밀번호</p>
-                    <input type="text" placeholder="비밀번호" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input class="inputId" type="text" placeholder="비밀번호" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>비밀번호 재확인</p>
-                    <input type="text" placeholder="비밀번호 재확인" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input class="inputId" type="text" placeholder="비밀번호 재확인" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>이름</p>
-                    <input type="text" placeholder="이름" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input class="inputId" type="text" placeholder="이름" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                     <p>생년월일</p>
                     <input type="text" placeholder="년" style="width: 150px; height: 50px; margin-bottom: 10px;">
                     <input type="text" placeholder="월" style="width: 150px; height: 50px; margin-bottom: 10px;">
                     <input type="text" placeholder="일" style="width: 150px; height: 50px; margin-bottom: 10px;">
                     <p>휴대전화</p>
-                    <input type="text" placeholder="휴대전화" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <input class="inputId" type="text" placeholder="휴대전화" style="width: 300px; height: 50px; margin-bottom: 10px;">
+                    <p style="margin-top: 0px; color: red;" class="MustTypingId">필수 입력란 입니다!! (최소3~5글자)</p>
                 </label>
             </form>
         </div>
@@ -39,5 +43,6 @@
     <p style="text-align: center;">Copyright MonsterZ Corp. All Rights Reserved.</p>
     </div>
     <script src="JoinUs.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </body>
 </html>

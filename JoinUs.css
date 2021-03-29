@@ -1,6 +1,9 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.MustTypingId {
+  display: none;
+}
 .JoinUs {
   margin: 0px auto;
 }
