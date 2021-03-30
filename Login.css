@@ -1,8 +1,13 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #dddddd;
+  background-image: url("imgs/Index_bg.jpg");
   animation-name: fadein;
   animation-duration: 2s;
+  color: white;
+}
+.MonsterZLogo img {
+  width: 150px;
+  height: 150px;
 }
 .Login {
   text-align: center;
@@ -13,12 +18,12 @@ body {
   text-align: center;
 }
 #Login_p {
+  padding-top: 30px;
   letter-spacing: 1px;
 }
 .Login_backGround {
   width: 500px;
   height: 300px;
-  background-color: black;
   border-radius: 20px;
 }
 .Login_input {
