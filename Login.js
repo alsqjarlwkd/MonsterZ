@@ -1,7 +1,7 @@
 const LoginBtn = document.querySelector(`.LoginBtn`);
 const JoinUsBtn = document.querySelector(`.JoinUsBtn`);
 function ClickLogin(){
-    var Form = document.querySelector('.LoginForm');
+    const Form = document.querySelector('.LoginForm');
     var ID = document.getElementById('ID');
     var PWD = document.getElementById('PWD');
 
