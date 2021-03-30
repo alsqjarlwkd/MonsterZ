@@ -17,6 +17,14 @@ function ClickLogin(){
 }
 function ClickJoinUs(){
 }
+function showIDSearchPopup() {
+    window.open("SearchID.html", "", "width=400, height=300, left=100, top=50",);
+    window.resizeTo(400,300);
+    }
+function ShowPWSearchPopup(){
+   window.open("SearchPW.html", "", "width=400, height=300, left=100, top=50",);
+   window.resizeTo(400,300);
+}
 function init(){
     LoginBtn.addEventListener("click",ClickLogin);
     JoinUsBtn.addEventListener("click",ClickJoinUs);
