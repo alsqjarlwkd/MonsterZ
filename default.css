@@ -64,6 +64,8 @@ body {
   position: absolute;
   display: flex;
   left: 1300px;
+  text-align: center;
+  padding-top: 10px;
 }
 .Main_login p {
   margin-right: 10px;
