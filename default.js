@@ -54,7 +54,7 @@ $(document).ready(function(){
         
        else if(img_position == 5){
             imgs.animate({left:'+=2000px'});
-            img_postion = 0;
+            img_position = 0;
         }
     },2000);
 })
