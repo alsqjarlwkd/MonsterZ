@@ -27,38 +27,58 @@ body {
 }
 .menu1 {
   cursor: pointer;
+  margin-bottom: 0px;
 }
 .menu2 {
   cursor: pointer;
+  margin-bottom: 0px;
 }
 .menu3 {
   cursor: pointer;
+  margin-bottom: 0px;
 }
 .menu4 {
   cursor: pointer;
+  margin-bottom: 0px;
 }
 .menu5 {
   cursor: pointer;
+  margin-bottom: 0px;
 }
 .menu_sub1 {
   list-style: none;
   display: none;
 }
+.menu_sub1 li {
+  cursor: pointer;
+}
 .menu_sub2 {
   list-style: none;
   display: none;
+}
+.menu_sub2 li {
+  cursor: pointer;
 }
 .menu_sub3 {
   list-style: none;
   display: none;
 }
+.menu_sub3 li {
+  cursor: pointer;
+}
 .menu_sub4 {
   list-style: none;
   display: none;
 }
+.menu_sub4 li {
+  cursor: pointer;
+}
 .menu_sub5 {
   list-style: none;
   display: none;
+}
+.menu_sub5 li {
+  cursor: pointer;
 }
 .Main_login {
   position: absolute;
@@ -75,4 +95,24 @@ body {
 .Main_login p a {
   text-decoration: none;
   color: white;
+}
+.Slide {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.Slide img {
+  width: 500px;
+  height: 500px;
+}
+.Slide ul {
+  display: flex;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 2000px;
+  position: absolute;
+  height: 500px;
+  margin: 0px;
+  bottom: 0px;
 }
