@@ -101,6 +101,7 @@ body {
   height: 500px;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 .Slide img {
   width: 500px;

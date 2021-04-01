@@ -45,13 +45,15 @@ $(document).ready(function(){
     imgs = $(".Slide ul");
     img_count = imgs.children().length;
 
-
-   setInterval(function(){
-        imgs.animate({left:`-=500px`});
+    setInterval(function(){
         img_postion++;
-
-        if(img_postion == 5){
-            imgs.animate({left:`+=2500px`});
+    
+        if(img_postion != 5){
+            imgs.animate({left:'-=500px'});
+        }
+        
+       else if(img_postion == 5){
+            imgs.animate({left:'+=2000px'});
             img_postion = 0;
         }
     },2000);
