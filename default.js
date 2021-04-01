@@ -40,19 +40,19 @@ $(document).ready(function(){
 $(document).ready(function(){
     let imgs;
     let img_count;
-    let img_postion = 0;
+    let img_position = 0;
 
     imgs = $(".Slide ul");
     img_count = imgs.children().length;
 
     setInterval(function(){
-        img_postion++;
+        img_position++;
     
-        if(img_postion != 5){
+        if(img_position != 5){
             imgs.animate({left:'-=500px'});
         }
         
-       else if(img_postion == 5){
+       else if(img_position == 5){
             imgs.animate({left:'+=2000px'});
             img_postion = 0;
         }
