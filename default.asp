@@ -2,19 +2,87 @@
 <%@CODEPAGE ="65001"%>
 <%Response.CharSet ="utf-8"%>
 <!--#include file="dbconn.inc"-->
-<html><head></head>
-<body><center>
+<html>
+<head>
+  <link rel="stylesheet" href="default.css">
+</head>
+<body>
+<div class="Section1">
+<div class="LogoMonsterZ">
+<img src="./imgs/Monster_Z_Logo_White.png">
+</div>
+<div class="navbar">
+<ul><p class="menu1">MonsterZ 소개</p>
+  <div class="menu_sub1">
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+  </div>
+</ul>
+<ul><p class="menu2">상품판매</p>
+  <div class="menu_sub2">
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+  </div>
+</ul>
+<ul><p class="menu3">컴퓨터사양</p>
+  <div class="menu_sub3">
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+</div>
+</ul>
+<ul><p class="menu4">임직원</p>
+  <div class="menu_sub4">
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+</div>
+</ul>
+<ul><p class="menu5">MonsterZ 연혁</p>
+  <div class="menu_sub5">
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+  <li>dddd</li>
+</div>
+</ul>
+<div class="Main_login"  style="padding-top:15px;">
 <% if session("id") = "" then %>
-  <h2>회원만 접근할 수 잇는 페이지 입니다.</h2>
-  <hr>
-  <br>sessionID: <%session.sessionid()%><br>
-  <a href="member.html">회원가입</a><br><br>
-  <a href="login.html">로그인</a>
+<p><a href="Login.html">로그인</a></p>
+<p>/</p>
+<p><a href="JoinUs.html">회원가입</a></p>
+</div>
 <%else%>
-  <H2><%response.write Session("name")%> 님 로그인 되었습니다.</h2>
-  <br><a href = "mem_edit.asp">회원정보수정</a>
-  <a href = "mem_del.asp">회원탈퇴</a>
-  <a href = "logout.asp">로그아웃</a>
-  <br>sessionID: <%response.write Session("id")%><br>
+<div class="Main_login_info">
+<h4 style="margin-top:0px"><%=Session("name")%> 님 로그인 되었습니다.</h4>
+  <br><a href = "mem_edit.asp" style="text-decoration:none;"><p style="text-decoration:none; display:inline-block">회원정보수정</p></a>
+  <a href = "mem_del.asp" style="text-decoration:none;"><p style="text-decoration:none;display:inline-block">회원탈퇴</p></a>
+  <a href = "logout.asp" style="text-decoration:none;"><p style="text-decoration:none;display:inline-block">로그아웃</p></a>
+  <!--  <br>sessionID: <%response.write Session("id")%><br>
+-->
+</div>
 <%end if%>
-</center></body></html>
+</div>
+</div>
+</div>
+<div class="section2">
+<div class="Slide">
+<ul>
+  <li style="list-style: none;"><img src="./imgs/Monster_Z_Logo_White.png"></li>
+  <li style="list-style: none;"><img src="./imgs/Monster_Z_Logo_White.png"></li>
+  <li style="list-style: none;"><img src="./imgs/Monster_Z_Logo_White.png"></li>
+  <li style="list-style: none;"><img src="./imgs/Monster_Z_Logo_White.png"></li>
+  <li style="list-style: none;"><img src="./imgs/Monster_Z_Logo_White.png"></li>
+</ul>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="default.js"></script>
+</body>
+</html>
