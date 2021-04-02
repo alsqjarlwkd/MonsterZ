@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--<%@CODEPAGE ="65001"%>
-<%Response.CharSet ="utf-8"%>
-#include file="dbconn.inc"-->
+//<%Response.CharSet ="utf-8"%>
+<!--#include file="dbconn.inc"-->
 <html>
 <head>
   <link rel="stylesheet" href="default.css">
@@ -12,7 +12,7 @@
 <img src="./imgs/Monster_Z_Logo_White.png">
 </div>
 <div class="navbar">
-<ul><p class="menu1">ㅇㅇㅇㅇ</p>
+<ul><p class="menu1">MonsterZ 소개</p>
   <div class="menu_sub1">
   <li>dddd</li>
   <li>dddd</li>
@@ -20,7 +20,7 @@
   <li>dddd</li>
   </div>
 </ul>
-<ul><p class="menu2">ㅇㅇㅇㅇ</p>
+<ul><p class="menu2">상품판매</p>
   <div class="menu_sub2">
   <li>dddd</li>
   <li>dddd</li>
@@ -28,7 +28,7 @@
   <li>dddd</li>
   </div>
 </ul>
-<ul><p class="menu3">ㅇㅇㅇㅇ</p>
+<ul><p class="menu3">컴퓨터사양</p>
   <div class="menu_sub3">
   <li>dddd</li>
   <li>dddd</li>
@@ -36,7 +36,7 @@
   <li>dddd</li>
 </div>
 </ul>
-<ul><p class="menu4">ㅇㅇㅇㅇ</p>
+<ul><p class="menu4">임직원</p>
   <div class="menu_sub4">
   <li>dddd</li>
   <li>dddd</li>
@@ -44,7 +44,7 @@
   <li>dddd</li>
 </div>
 </ul>
-<ul><p class="menu5">ㅇㅇㅇㅇ</p>
+<ul><p class="menu5">MonsterZ 연혁</p>
   <div class="menu_sub5">
   <li>dddd</li>
   <li>dddd</li>
@@ -70,8 +70,8 @@
 </ul>
 </div>
 </div>
-<!--<center>
-  <H2><%response.write Session("name")%> 님 로그인 되었습니다.</h2>
+<center>
+  <H2><%=Session("name")%> 님 로그인 되었습니다.</h2>
   <br><a href = "mem_edit.asp">회원정보수정</a>
   <a href = "mem_del.asp">회원탈퇴</a>
   <a href = "logout.asp">로그아웃</a>

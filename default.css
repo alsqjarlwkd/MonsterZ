@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  margin-left: 100px;
 }
 .navbar ul {
   margin-right: 80px;
@@ -81,11 +82,8 @@ body {
   cursor: pointer;
 }
 .Main_login {
-  position: absolute;
   display: flex;
-  left: 1300px;
-  text-align: center;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 .Main_login p {
   margin-right: 10px;
