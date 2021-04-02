@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="UTF-8">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,16 @@
     <link rel="stylesheet" href="Login.css">
     <title>MonsterZ</title>
 </head>
+
 <body>
     <div class="Login">
         <div class="MonsterZLogo">
             <img src="./imgs/Monster_Z_Logo_White.png">
         </div>
         <div class="Login_backGround">
-            <div id="Login_p"><p>MonsterZ 로그인</p></div>
+            <div id="Login_p">
+                <p>MonsterZ 로그인</p>
+            </div>
             <form class="LoginForm" action="login_check.asp" method="post">
                 <label class="Login_input">
                 <div>
@@ -29,13 +33,20 @@
                 </label>
             </form>
         </div>
+        <div class="btn_kakao_login">
+            <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" width="222" />
+        </div>
         <div class="SearchSection">
-            <p style="margin-right: 20px;" onclick="showIDSearchPopup();" ><u>아이디 찾기</u></p>
+            <p style="margin-right: 20px;" onclick="showIDSearchPopup();"><u>아이디 찾기</u></p>
             <p onclick="ShowPWSearchPopup();"><u>비밀번호 찾기</u></p>
         </div>
         <div class="Copyright">
-        <p>Copyright © MonsterZ Corp. All Rights Reserved.</p>
+            <p>Copyright © MonsterZ Corp. All Rights Reserved.</p>
         </div>
-    <script src="./Login.js"></script>
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script src="./Login.js"></script>
+        <script src="./common.js"></script>
+        <script src="./index.js"></script>
 </body>
+
 </html>
