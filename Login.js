@@ -1,10 +1,10 @@
 const LoginBtn = document.querySelector(`.LoginBtn`);
 const JoinUsBtn = document.querySelector(`.JoinUsBtn`);
-function ClickLogin(){
-    const Form = document.querySelector('.LoginForm');
-    var ID = document.getElementById('ID');
-    var PWD = document.getElementById('PWD');
+const Form = document.querySelector('.LoginForm');
+var ID = document.getElementById('ID');
+var PWD = document.getElementById('PWD');
 
+function ClickLogin(){
     if(ID.value === ""){
         alert("아이디를 입력해주세요.");
     }
@@ -13,6 +13,23 @@ function ClickLogin(){
     }
     else if(ID.value != "" & PWD.value != ""){
         Form.submit();
+    }
+
+}
+function loginEnter(){
+    if(window.event.keyCode == 13)
+    {
+        if(ID.value === "")
+        {
+            alert("아이디를 입력해주세요.");
+        }
+        else if(PWD.value === ""){
+            alert("비밀번호를 입력해주세요.");
+        }
+        else if(ID.value != "" & PWD.value != ""){
+            Form.submit();
+        }
+        
     }
 }
 function ClickJoinUs(){
