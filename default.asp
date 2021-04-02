@@ -52,20 +52,22 @@
   <li>dddd</li>
 </div>
 </ul>
-<div class="Main_login"  style="padding-top:15px;">
+<div class="Main_login"  style="padding-top:15px; margin-top:0px">
 <% if session("id") = "" then %>
 <p><a href="Login.html">로그인</a></p>
 <p>/</p>
 <p><a href="JoinUs.html">회원가입</a></p>
 </div>
 <%else%>
-<div class="Main_login_info">
-<h4 style="margin-top:0px"><%=Session("name")%> 님 로그인 되었습니다.</h4>
+<div class="Main_login_info" style="width:300px">
+<h4 style="margin-top:0px; text-align:center;"><%=Session("name")%> 님 로그인 되었습니다.</h4>
+<div class="Main_login_info_sub" style="text-align:center;">
   <br><a href = "mem_edit.asp" style="text-decoration:none;"><p style="text-decoration:none; display:inline-block">회원정보수정</p></a>
   <a href = "mem_del.asp" style="text-decoration:none;"><p style="text-decoration:none;display:inline-block">회원탈퇴</p></a>
   <a href = "logout.asp" style="text-decoration:none;"><p style="text-decoration:none;display:inline-block">로그아웃</p></a>
   <!--  <br>sessionID: <%response.write Session("id")%><br>
 -->
+</div>
 </div>
 <%end if%>
 </div>
