@@ -3,35 +3,35 @@ $(document).ready(function(){
     $(".menu1").mouseover(function(){
         $(".menu_sub1").slideDown(200)
     });
-    $(".menu1").click(function(){
+    $(".navbar_item1").mouseleave(function(){
         $(".menu_sub1").slideUp(200)
     });
 
     $(".menu2").mouseover(function(){
         $(".menu_sub2").slideDown(200)
     });
-    $(".menu2").click(function(){
+    $(".navbar_item2").mouseleave(function(){
         $(".menu_sub2").slideUp(200)
     });
 
     $(".menu3").mouseover(function(){
         $(".menu_sub3").slideDown(200)
     });
-    $(".menu3").click(function(){
+    $(".navbar_item3").mouseleave(function(){
         $(".menu_sub3").slideUp(200)
     });
     
     $(".menu4").mouseover(function(){
         $(".menu_sub4").slideDown(200)
     });
-    $(".menu4").click(function(){
+    $(".navbar_item4").mouseleave(function(){
         $(".menu_sub4").slideUp(200)
     });
     
     $(".menu5").mouseover(function(){
         $(".menu_sub5").slideDown(200)
     });
-    $(".menu5").click(function(){
+    $(".navbar_item5").mouseleave(function(){
         $(".menu_sub5").slideUp(200)
     });
 })
@@ -58,3 +58,12 @@ $(document).ready(function(){
         }
     },2000);
 })
+
+document.addEventListener('scroll',function(){
+    let currentScrollValue = document.documentElement.scrollTop;
+    console.log(currentScrollValue);
+})
+
+function MonsterZ_introduce(){
+    window.scrollTo({top:388, left:0, behavior:'smooth'});
+}
