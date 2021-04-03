@@ -118,3 +118,14 @@ body {
   margin: 0px;
   bottom: 0px;
 }
+.MonsterZ_intro {
+  text-align: center;
+}
+.MonsterZ_intro_img {
+  display: flex;
+  justify-content: center;
+}
+.MonsterZ_intro_img img {
+  width: 150px;
+  height: 150px;
+}

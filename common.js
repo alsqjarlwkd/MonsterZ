@@ -9,8 +9,8 @@ function init() {
 
     console.log(window.location.pathname)
     if (isLoggedin()) {
-        if (window.location.pathname !== '/default.html') {
-            window.location.pathname = '/default.html';
+        if (window.location.pathname !== '/DefaultkaKao.html') {
+            window.location.pathname = '/DefaultkaKao.html';
         }
     } else {
         if (window.location.pathname !== '/Login.html') {
