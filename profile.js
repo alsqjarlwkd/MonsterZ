@@ -4,7 +4,9 @@ window.addEventListener('load', initView);
 
 function initView() {
     const btnKakaoLogout = document.getElementById('btn_kakao_logout');
+    const btnKakaoUnsub = document.getElementById('btn_kakao_unsub');
     btnKakaoLogout.addEventListener('click', logout);
+    btnKakaoUnsub.addEventListener('click', unsubscribe);
 
     requestData();
 }
@@ -13,6 +15,22 @@ function logout() {
     Kakao.Auth.logout(function() {
         console.log(Kakao.Auth.getAccessToken());
         window.location.href = ''
+    });
+}
+
+function unsubscribe() { // 회원 탈퇴
+    Kakao.API.request({
+        url: '/v1/user/unlink',
+        success: function(response) {
+            console.log(response);
+            Kakao.Auth.logout(function() {
+                console.log(Kakao.Auth.getAccessToken());
+                window.location.href = ''
+            });
+        },
+        fail: function(error) {
+            console.log(error);
+        },
     });
 }
 
@@ -53,6 +71,7 @@ function initProfileView(kakao_account) {
     // document.getElementById('image_profile').setAttribute('src', profile_image_url);
     document.getElementById('kakao_name').textContent = `${nickname}님 로그인 되었습니다.`;
 }
+
 // function sendSimpleMessage() {
 //   Kakao.Link.createCustomButton({
 //     templateId: 47342,
