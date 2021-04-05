@@ -1,0 +1,46 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #dddddd;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+.MustTypingId {
+    display: none;
+}
+
+.Mem_edit {
+    margin: 0px auto;
+}
+
+#Mem_edit_p {
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.inputSection {
+    text-align: center;
+}
+
+.Mem_edit_btn_wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.Mem_edit_btn {
+    background-color: black;
+    color: white;
+    width: 500px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
