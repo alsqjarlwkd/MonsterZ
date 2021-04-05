@@ -67,3 +67,6 @@ document.addEventListener('scroll',function(){
 function MonsterZ_introduce(){
     window.scrollTo({top:388, left:0, behavior:'smooth'});
 }
+function MonsterZ_Product_sell(){
+    window.scrollTo({top:1137, left:0, behavior:'smooth'});
+}
