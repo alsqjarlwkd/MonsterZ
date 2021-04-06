@@ -23,7 +23,7 @@
   </div>
 </ul>
 <div class="navbar_item2">
-<ul><p class="menu2">상품판매</p>
+<ul><p class="menu2" onclick="MonsterZ_Product_sell();">상품판매</p>
   <div class="menu_sub2">
   <li>dddd</li>
   <li>dddd</li>
@@ -107,6 +107,16 @@
     <img src="./imgs/Monster_Z_Logo_White.png">
   </div>
 </div>
+<hr style="margin-top: 16px; margin-bottom: 16px;">
+<div class="section4">
+<div class="MonsterZ_Product_sales">
+  <h1>상품 판매</h1>
+  <p>상품 판매 섹션 입니다</p>
+  <div class="MonsterZ_Product_sales_section"></div>
+</div>
+</div>
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="default.js"></script>
 </body>
