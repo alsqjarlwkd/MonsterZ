@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="default.css">
 </head>
 <body>
+<div class="Slide_Slidebar_wrapper">
+<div class="Side_Slidebar">
+</div>
+</div>
 <div class="Section1">
 <div class="LogoMonsterZ">
 <img src="./imgs/Monster_Z_Logo_White.png">
@@ -73,10 +77,8 @@
 <h4 style="margin-top:0px; text-align:center;"><%=Session("name")%> 님 로그인 되었습니다.</h4>
 <div class="Main_login_info_sub" style="text-align:center;">
   <br><a href = "mem_edit.asp" style="text-decoration:none;"><p style="text-decoration:none; display:inline-block">회원정보수정</p></a>
-  <a href = "mem_del.asp" style="text-decoration:none;"><p style="text-decoration:none;display:inline-block">회원탈퇴</p></a>
+  <p style="text-decoration:none;display:inline-block;cursor:pointer;" onclick="memberOut();">회원탈퇴</p>
   <a href = "logout.asp" style="text-decoration:none;"><p style="text-decoration:none;display:inline-block">로그아웃</p></a>
-  <!--  <br>sessionID: <%response.write Session("id")%><br>
--->
 </div>
 </div>
 <%end if%>
@@ -115,8 +117,6 @@
   <div class="MonsterZ_Product_sales_section"></div>
 </div>
 </div>
-<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="default.js"></script>
 </body>
