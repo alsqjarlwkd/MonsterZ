@@ -25,5 +25,5 @@ set dbconn = nothing
 %>
 <script type="text/javascript">
   alert("사이트에서 탈퇴하셧습니다.\n이용해주셔서 감사합니다.");
-  location.href="default.asp";
+  window.close();
 </script>

@@ -70,3 +70,12 @@ function MonsterZ_introduce(){
 function MonsterZ_Product_sell(){
     window.scrollTo({top:1137, left:0, behavior:'smooth'});
 }
+
+function memberOut(){
+    window.open("mem_del.asp", "", "width=400, height=300, left=100, top=50",);
+   window.resizeTo(400,300);
+}
+
+function side_slideopen(){
+    
+}
